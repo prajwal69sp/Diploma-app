@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "564771145790",
+    "project_id": "brilliant-brand-458614-i3",
+    "storage_bucket": "brilliant-brand-458614-i3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564771145790:android:e99a9044dc375b4699e96f",
+        "android_client_info": {
+          "package_name": "com.aistudio.diplomahubai.pkmpzq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564771145790-gpn12mdn8t6fk4rlfmf7bn2rf5kbn396.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aistudio.diplomahubai.pkmpzq",
+            "certificate_hash": "8269537b82661a08f97ff4918f17186e11e5ccb1"
+          }
+        },
+        {
+          "client_id": "564771145790-5rlpmj56nlsmah0nt7g16neot9542q1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCruq-mJ1jvCiQwubmnusk2LnUNU2Tw4mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564771145790-5rlpmj56nlsmah0nt7g16neot9542q1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

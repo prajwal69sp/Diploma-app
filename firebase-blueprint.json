@@ -1,0 +1,125 @@
+{
+  "collections": {
+    "profiles": {
+      "schema": {
+        "userId": "string",
+        "email": "string",
+        "displayName": "string",
+        "photoUrl": "string",
+        "role": "string",
+        "enrolledBranchId": "string?",
+        "enrolledSemester": "string?",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      },
+      "indexes": [
+        {
+          "fields": [
+            "role"
+          ]
+        }
+      ]
+    },
+    "branches": {
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "description": "string",
+        "iconName": "string",
+        "displayOrder": "number",
+        "isEnabled": "boolean",
+        "semesterCount": "number",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      },
+      "indexes": [
+        {
+          "fields": [
+            "displayOrder"
+          ]
+        }
+      ]
+    },
+    "subjects": {
+      "schema": {
+        "id": "string",
+        "branchId": "string",
+        "semester": "string",
+        "name": "string",
+        "code": "string",
+        "description": "string",
+        "displayOrder": "number",
+        "isPublished": "boolean",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      },
+      "indexes": [
+        {
+          "fields": [
+            "branchId",
+            "semester",
+            "displayOrder"
+          ]
+        }
+      ]
+    },
+    "units": {
+      "schema": {
+        "id": "string",
+        "subjectId": "string",
+        "name": "string",
+        "displayOrder": "number",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "resources": {
+      "schema": {
+        "id": "string",
+        "subjectId": "string",
+        "unitId": "string?",
+        "type": "string",
+        "title": "string",
+        "description": "string",
+        "fileUrl": "string",
+        "youtubeUrl": "string?",
+        "displayOrder": "number",
+        "isPublished": "boolean",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      },
+      "indexes": [
+        {
+          "fields": [
+            "subjectId",
+            "type",
+            "displayOrder"
+          ]
+        }
+      ]
+    },
+    "announcements": {
+      "schema": {
+        "id": "string",
+        "title": "string",
+        "message": "string",
+        "timestamp": "timestamp",
+        "isPublished": "boolean"
+      }
+    },
+    "app_settings": {
+      "schema": {
+        "id": "string",
+        "appName": "string",
+        "tagline": "string",
+        "creatorName": "string",
+        "creatorBio": "string",
+        "creatorEducation": "string",
+        "youtubeUrl": "string",
+        "instagramUrl": "string",
+        "supportEmail": "string",
+        "aiEnabled": "boolean"
+      }
+    }
+  }
+}
